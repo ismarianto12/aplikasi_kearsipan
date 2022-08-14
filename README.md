@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[[/public/app.png|Aplikasi]]
+[[public/app.png|Aplikasi]]
 
 ## Available Scripts
 

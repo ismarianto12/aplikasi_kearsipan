@@ -1,11 +1,32 @@
 import { createSlice } from "@reduxjs/toolkit"
 import axios from "axios"
+import { useState } from "react";
 import Swal from "sweetalert2";
+import API_ADDR from '../helpers/app'
+// async thunk
 
+const getdata = () => {
+
+    const options = {
+        method: 'GET',
+        url: API_ADDR + '/api/v1/arsip',
+        headers: {
+            'Content-type': 'Application/json',
+        }
+    }
+    axios(options)
+        .then(response => {
+        }).catch(function (error) {
+            console.log(error)
+
+        })
+
+
+}
 
 export const arsipSlice = createSlice({
     name: 'arsip',
-    initialState: { value: [] },
+    initialState: {},
     reducers: {
         createarsip: (state, action) => {
             console.log(action.payload)

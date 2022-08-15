@@ -5,10 +5,9 @@ import { useNavigate } from 'react-router-dom'
 import Template from '../../components/Template'
 import { createarsip } from '../../actions/arsip'
 import { useState } from 'react'
-import Swal from "sweetalert2";  
+import Swal from "sweetalert2"
 
 function ArsipTambah() {
-    // const arsip = useSelector((state) => state.arsip.value)
     const dispatch = useDispatch()
     const [value, setValue] = useState({
         nama_arsip: '',
@@ -82,7 +81,7 @@ function ArsipTambah() {
             </>
         } />
 
-    );
+    )
 }
 
-export default ArsipTambah;
+export default ArsipTambah

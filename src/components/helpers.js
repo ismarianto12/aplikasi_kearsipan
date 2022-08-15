@@ -6,6 +6,6 @@ export const getItem = (nama) => {
 
 
 export const setItem = (nama) => {
-    return localStorage.setItem('nama', nama)
+    return localStorage.setItem('token', nama)
 }
  

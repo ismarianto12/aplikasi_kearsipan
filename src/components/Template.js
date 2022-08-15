@@ -24,7 +24,7 @@ const Template = ({
     const router = useLocation();
     const collapsed = useContext(Headercontext);
     console.log('passed' + collapsed)
-
+ 
     return (<>
         <Header title={title}></Header>
         <div className="container-fluid">

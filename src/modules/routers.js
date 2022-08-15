@@ -11,7 +11,7 @@ import ArsipTambah from './arsip/arsip_tambah'
 
 export const router = [
     {
-        'path': '/dashboard',
+        'path': '/',
         'component': <Dashboard />,
         'index': 'index'
     },
@@ -21,22 +21,27 @@ export const router = [
         'index': ''
     }, 
     {
-        'path': 'master/arsip/tambah',
+        'path': '/master/arsip/tambah',
         'component': <ArsipTambah />,
         'index': ''
     },
     {
-        'path': 'master/arsip/jenis',
+        'path': '/master/arsip/edit',
+        'component': <ArsipTambah />,
+        'index': ''
+    },
+    {
+        'path': '/master/arsip/jenis',
         'component': <JenisArsip />,
         'index': ''
     },
     {
-        'path': 'detail/arsip/:id',
+        'path': '/detail/arsip/:id',
         'component': <BarangTambah />,
         'index': ''
     },
     {
-        'path': 'barang/edit/:id',
+        'path': '/barang/edit/:id',
         'component': <EditBarang />,
         'index': '',
     },
@@ -47,49 +52,6 @@ export const router = [
 
     },
     // kategori
-    {
-        'path': '/',
-        'component': <HalamanDepan />,
-
-
-        'index': ''
-    },
-    {
-        'path': 'kateogi',
-        'component': <BarangDepan />,
-        'index': ''
-    }, {
-        'path': 'kategori/tambah',
-        'component': <BarangTambah />,
-
-
-        'index': ''
-    },
-    {
-        'path': 'kategori/:id',
-        'component': <BarangTambah />,  
-        'index': ''
-    },
-    {
-        'path': 'kategori/edit/:id',
-        'component': <EditBarang />,
-        'index': '',
-    },
-    {
-        'path': 'purchasing',
-        'component': <Purcashing />,
-        'index': '',
-    },
-    {
-        'path': '*',
-        'component': <NoMatch />,
-        'index': ''
-
-    },
-    {
-        'path': 'dashboard',
-        'component': <Dashboard />,
-        'index': '',
-    },
+    
    
 ]
